@@ -21,12 +21,12 @@ const routes=[
     {
         name:"Add",
         component:AddComponent,
-        path:"/AddComponent",
+        path:"/Add",
     },
     {
         name:"Update",
         component:UpdateComponent,
-        path:"/Update",
+        path:"/Update/:id",
     },
         {
           path: "/",

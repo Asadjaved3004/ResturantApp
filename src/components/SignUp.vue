@@ -1,3 +1,5 @@
+
+<!----------------Sign Up Form--------------------------------------------------->
 <template>
     <img class="logo" src="../assets/logo.png"/>
     <h1>Sign Up</h1>
@@ -31,13 +33,15 @@ export default{
             password:this.password
            });
            console.warn(result);
+
+
            if(result.status==201){
-            // alert("sign-up done");
             localStorage.setItem("user-info",JSON.stringify(result.data))
             this.$router.push('/SignUp')
            }
         }
     },
+     //life cycle method run when page is load
     mounted(){
         let user= localStorage.getItem('user-info');
         if(user){ 
